@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, 
+h2, 
+h3, 
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+blockquote {
+    margin: 0; 
+    padding: 0;
+}
+
+content{
+    display: flex;
+    justify-content: center;
+}
+
+.result {
+    min-height: 711px;
+}
+
+.details{
+    min-height: 399px;
+}
