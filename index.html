@@ -10,7 +10,25 @@
   <body>
     <main>
       <content>
-        <section class="result"></section>
+        <section class="result">
+            <div class="result__video-container">
+            <video controls loop>
+            <source src="videos/lake-park-recreation.mp4" type="video/mp4" />
+            </div>
+            <form class="search-form" action="">
+                <fieldset>
+                    <label>Город</label>
+                    <input type="text" name="tv-show" placeholder="Санкт-Петербург, например"/>
+                </fieldset>
+                <fieldset>
+                    <h2>Время суток</h2>
+                    <label> <input type="checkbox" name="tv-show" /> Утро </label>
+                    <label> <input type="checkbox" name="tv-show" /> День </label>
+                    <label> <input type="checkbox" name="tv-show" /> Ночь </label>
+                </fieldset>
+                <button>Найти</button>
+            </form>
+        </section>
         <section class="details"></section>
       </content>
     </main>
