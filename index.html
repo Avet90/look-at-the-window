@@ -11,7 +11,7 @@
     <main>
       <content>
         <section class="result">
-          <div class="result__video-container">
+          <div class="result__video">
             <video controls loop>
               <source src="videos/lake-park-recreation.mp4" type="video/mp4" />
             </video>
@@ -37,73 +37,73 @@
                 <input type="checkbox" name="search-checkbox-day" /> Ночь
               </label>
             </fieldset>
-            <button class="search-form-button">Найти</button>
+            <button class="button search-form-button">Найти</button>
           </form>
         </section>
         <section class="details">
-          <h2>по- смотри в окно</h2>
-          <iframe src="">
-            <!DOCTYPE html>
-            <html>
-              <head>
-                <title>Video Playlist</title>
-              </head>
-              <body>
-                <h1>Video Playlist</h1>
-                <div class="video-item">
-                  <h2>Video 1</h2>
-                  <video controls>
-                    <source
-                      src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-                      type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-
-                <div class="video-item">
-                  <h2>Video 2</h2>
-                  <video controls>
-                    <source
-                      src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
-                      type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-
-                <div class="video-item">
-                  <h2>Video 3</h2>
-                  <video controls>
-                    <source
-                      src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
-                      type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              </body>
-            </html>
-          </iframe>
+          <h2 class="title-details"><span>по-</span>смотри в окно</h2>
+          <div class="video-container">
+            <div class="video-item">
+              <div class="video-description">
+                <h2>Корабль</h2>
+                <p>
+                  Вот, что видит кто-то из команды Практикума, когда не смотрит
+                  на код, а смотрит в окно.
+                </p>
+              </div>
+              <video>
+                <source src="videos/old-sailing-ship.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-description">
+                <h2>Парусник</h2>
+                <p>
+                  Вот, что видит кто-то из команды Практикума, когда не смотрит
+                  на код, а смотрит в окно.
+                </p>
+              </div>
+              <video>
+                <source
+                  src="videos/sailboat-sailing-ocean.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-description">
+                <h2>Остров</h2>
+                <p>
+                  Вот, что видит кто-то из команды Практикума, когда не смотрит
+                  на код, а смотрит в окно.
+                </p>
+              </div>
+              <video>
+                <source
+                  src="videos/tropical-island-coast-4k.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="video-item">
+              <div class="video-description">
+                <h2>Восход</h2>
+                <p>
+                  Вот, что видит кто-то из команды Практикума, когда не смотрит
+                  на код, а смотрит в окно.
+                </p>
+              </div>
+              <video>
+                <source
+                  src="videos/water-evening-sunset.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <button class="button more-button">Показать еще</button>
+          </div>
         </section>
       </content>
     </main>
-    <template class="more-button-template">
-      <video controls loop>
-        <source src="videos/old-sailing-ship.mp4" type="video/mp4" />
-      </video>
-      <video controls loop>
-        <source src="videos/sailboat-sailing-ocean.mp4" type="video/mp4" />
-      </video>
-      <video controls loop>
-        <source src="videos/tropical-island-coast-4k.mp4" type="video/mp4" />
-      </video>
-      <video controls loop>
-        <source src="videos/water-evening-sunset.mp4" type="video/mp4" />
-      </video>
-    </template>
-    <template class="more-button-template">
-      <li><button class="button more-button">Показать еще</button></li>
-    </template>
   </body>
 </html>
