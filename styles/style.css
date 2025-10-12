@@ -1,3 +1,7 @@
+*:focus {
+    outline: 1px solid #ffffff;
+}
+
 body {
     margin: 0;
     box-sizing: border-box;
@@ -19,6 +23,7 @@ blockquote {
     margin: 0; 
     padding: 0;
 }
+
 
 content{
     display: flex;
@@ -81,6 +86,10 @@ fieldset.search-form-city input {
     margin-top: 5px;
 }
 
+/* fieldset.search-form-city input:focus{
+    outline: 2px solid #ffffff;
+} */
+
 .search-form-day{
     width: 212px;
     padding: 0;
@@ -117,6 +126,11 @@ fieldset.search-form-day input[type="checkbox"]:checked {
     background-repeat: no-repeat;
 }
 
+fieldset.search-form-day label:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 fieldset.search-form-day label:not(:last-child) {
     margin-right: 8px;
 }
@@ -131,9 +145,17 @@ fieldset.search-form-day label:not(:last-child) {
     transition: all 0.3s ease;
 }
 
+.button:hover{
+    text-decoration: underline;
+}
+
 .search-form-button{
     width: 194px;
     align-self: end;
+}
+
+.search-form-button:active{
+    background-color: #545050;
 }
 
 .title-details{
@@ -161,6 +183,10 @@ fieldset.search-form-day label:not(:last-child) {
     width: 100%;
 }
 
+.more-button:active{
+    background-color: #545050;
+}
+
 .video-item{
     display: flex;
 }
@@ -168,6 +194,21 @@ fieldset.search-form-day label:not(:last-child) {
 .video-item video{
     max-width: 194px;
 }
+
+.video-item video:hover{
+    cursor: pointer;
+}
+
+.video-item:active .video-description {
+    background-color: #545050;
+}
+
+.video-item:hover .video-description {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
 
 .video-item:not(:last-child){
     padding-bottom: 20px;
